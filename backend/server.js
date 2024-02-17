@@ -8,10 +8,10 @@ import userRoutes from "./routes/user.routes.js"
 
 import mongodb from "./db/mongodb.js"
 
+dotenv.config()
+
 const app = express()
 const PORT = process.env.PORT || 8000
-
-dotenv.config()
 
 app.use(express.json())
 app.use(cookieParser())
